@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #007BFF;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+            color: #007BFF;
+        }
+        .info {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .skill {
+            position: relative;
+            width: 100px; /* Adjusted width */
+            height: 100px; /* Adjusted height */
+            border-radius: 50%;
+            background-color: #007BFF;
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            overflow: hidden;
+            flex-direction: column; /* Stack text vertically */
+        }
+        .skill::after {
+            content: attr(data-percentage);
+            position: absolute;
+            top: 25%; /* Adjusted for better position */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0.8em;
+            color: white /* Semi-transparent text */
+            z-index: 1;
+        }
+        .skill span {
+            position: relative;
+            z-index: 2; /* Ensure the actual number is above the semi-transparent text */
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .box {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+        p {
+            margin: 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png" alt="Your Name" class="profile-img">
+        <h1>Батсайхан Төгөлдөр</h1>
+        <p class="info">Email: 444tugu@gmail.com </p>
+        <p class="info">Утас: +95754617</p>
+        <p class="info">Байршил: Улаанбаатар</p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill" data-percentage="90%">
+                <span>Photoshop</span>
+            </div>
+            <div class="skill" data-percentage="80%">
+                <span>Illustrator</span>
+            </div>
+            <div class="skill" data-percentage="80%">
+                <span>Word</span>
+            </div>
+            <div class="skill" data-percentage="60%">
+                <span>Excel</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="grid">
+            <div class="box">
+                <h2>Миний тухай</h2>
+                <p>Би 20 настай. МУИС-ын мультимедиа-гийн 3-р курсын оюутан Photoshop, PremierePro зэрэг програмууд болон бусад хэрэглээний програмууд дээр дундаас дээш түвшинд ажиллаж чадна. Мөн чөлөөт цагаараа хувь хүмүүстэй тохироод зураг янзлах, постер хийх гэх мэт freelance ажилууд хийдэг.</p>
+            </div>
+            <div class="box">
+                <h2>Боловсрол</h2>
+                <p><strong>Бүрэн дунд</strong>,Хөвсгөл 1-р сургууль (2022)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
